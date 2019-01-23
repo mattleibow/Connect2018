@@ -15,9 +15,9 @@ namespace NewThings
 
         public int SelectFromEnd(int index)
         {
-            Index fromEnd = index;
+            Index fromEnd = ^index;
 
-            return numbers[^index];
+            return numbers[fromEnd];
         }
 
         public int[] SelectRange(int start, int end)
