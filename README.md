@@ -7,7 +7,12 @@ Prerequisites:
 
 ## What's New in C# 8.0
 
-There are many features planned for C# 8.0, all of which are listed in this [GitHub milestone](https://github.com/dotnet/csharplang/milestone/8). But, Here are some of the most notable ones:
+There are many features planned for C# 8.0, all of which are listed in this [GitHub milestone](https://github.com/dotnet/csharplang/milestone/8).
+
+ - [Building C# 8.0](https://blogs.msdn.microsoft.com/dotnet/2018/11/12/building-c-8-0)
+ - [Take C# 8.0 for a spin](https://blogs.msdn.microsoft.com/dotnet/2018/12/05/take-c-8-0-for-a-spin)
+
+But, Here are some of the most notable ones:
 
  - **Nullable Reference Types** [Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references) + [Proposal](https://github.com/dotnet/csharplang/blob/d0f4efa010157bf2cefbbf17343b0c257f47c124/proposals/nullable-reference-types.md)
  - **Async Enumerables & Streams** [Proposal](https://github.com/dotnet/csharplang/blob/d0f4efa010157bf2cefbbf17343b0c257f47c124/proposals/async-streams.md)
@@ -15,7 +20,9 @@ There are many features planned for C# 8.0, all of which are listed in this [Git
  - **Ranges & Indices** [Proposal](https://github.com/dotnet/csharplang/blob/d0f4efa010157bf2cefbbf17343b0c257f47c124/proposals/ranges.md)
 
 
-There are also some other proposals that may or may not make it in, but you can have a look at them on [GitHubin the "proposals" folder](https://github.com/dotnet/csharplang/tree/master/proposals).
+There are also some other proposals that may or may not make it in, but you can have a look at them on [GitHub in the "proposals" folder](https://github.com/dotnet/csharplang/tree/master/proposals).
+
+You can also try many of them out on [SharpLab](https://sharplab.io).
 
 
 Some great videos:
@@ -26,7 +33,7 @@ Some great videos:
 
 ## What's New in .NET Core 3.0
 
- - [Announcement](https://blogs.msdn.microsoft.com/dotnet/2018/12/04/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks)
+ - [All Announcements](https://blogs.msdn.microsoft.com/dotnet/2018/12/04/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks)
  - [Release Notes](https://github.com/dotnet/core/tree/master/release-notes/3.0)
  - [WPF on GitHub](https://github.com/dotnet/wpf)
  - [WinForms on GitHub](https://github.com/dotnet/winforms)
@@ -36,6 +43,7 @@ Some great videos:
 
 ## What's New in .NET
 
+ - [All Announcements](https://blogs.msdn.microsoft.com/dotnet/2018/12/04/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks)
  - [XAML Islands](https://docs.microsoft.com/en-us/windows/uwp/xaml-platform/xaml-host-controls)
  - [XAML Islands - Deep Dive (Part 1)](https://blogs.windows.com/buildingapps/2018/11/02/xaml-islands-a-deep-dive-part-1)
  - [XAML Islands - Deep Dive (Part 2)](https://blogs.windows.com/buildingapps/2018/11/08/xaml-islands-a-deep-dive-part-2)

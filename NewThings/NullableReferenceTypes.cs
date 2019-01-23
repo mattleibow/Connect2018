@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-//#nullable enable
+#nullable enable
 
 namespace NewThings
 {
@@ -12,9 +12,9 @@ namespace NewThings
         private static readonly string[] Nicknames = { "Big Boy", "Peace", "Smiles", "Tough Guy", "Traitor", "Ziggy" };
         private static readonly string[] LastNames = { "Alfreado", "de Icaza", "Gates", "Leibowitz", "Pead", "Robinson", "Wayne" };
 
-        private List<Person> people;
+        private List<Person>? people;
 
-        public Person[] GetPeople() => people.ToArray();
+        public Person[] GetPeople() => people?.ToArray() ?? new Person[0];
 
         public void GeneratePeople()
         {
@@ -40,13 +40,13 @@ namespace NewThings
         {
             Console.WriteLine($"Adding a person with {nickname.Length} characters in their nickname!");
 
-            people.Add(new Person(Environment.TickCount, firstname, nickname, lastname));
+            people?.Add(new Person(Environment.TickCount, firstname, nickname, lastname));
         }
     }
 
     public class Person
     {
-        public Person(int id, string firstname, string nickname, string lastname)
+        public Person(int id, string firstname, string? nickname, string lastname)
         {
             Id = id;
             FirstName = firstname;
@@ -65,7 +65,7 @@ namespace NewThings
 
         public string FirstName { get; set; }
 
-        public string Nickname { get; set; }
+        public string? Nickname { get; set; }
 
         public string LastName { get; set; }
 
@@ -73,6 +73,9 @@ namespace NewThings
 
         public string ShortName => $"{Initial}. {LastName}";
 
-        public string FullName => $"{FirstName} '{Nickname.ToLower()}' {LastName}";
+        public string FullName =>
+            Nickname == null
+                ? $"{FirstName} {LastName}"
+                : $"{FirstName} '{Nickname.ToLower()}' {LastName}";
     }
 }
