@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>csharp.ico</ApplicationIcon>
+    <LangVersion>8.0</LangVersion>
+    <AssetTargetFallback>net47</AssetTargetFallback>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Toolkit.Wpf.UI.Controls" Version="5.0.1" NoWarn="NU1701" />
+    <PackageReference Include="Microsoft.Toolkit.Wpf.UI.XamlHost" Version="5.0.1" NoWarn="NU1701" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NewThings\NewThings.csproj" />
+  </ItemGroup>
+
+</Project>
