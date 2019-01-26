@@ -29,7 +29,7 @@ namespace NewThingsApp
                 var microsoftCapeTown = new BasicGeoposition { Latitude = -33.947285, Longitude = 18.490868 };
                 var sandtonConvention = new BasicGeoposition { Latitude = -26.104620, Longitude = 28.055849 };
 
-                map.TrySetViewAsync(new Geopoint(microsoftCapeTown), 16);
+                map.TrySetViewAsync(new Geopoint(sandtonConvention), 16);
             }
         }
 

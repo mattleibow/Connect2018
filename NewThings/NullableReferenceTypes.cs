@@ -2,7 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
+// enable nullable for just this file
 #nullable enable
+
+// or the whole solution
+// <NullableReferenceTypes>true</NullableReferenceTypes>
 
 namespace NewThings
 {
@@ -36,11 +40,15 @@ namespace NewThings
             }
         }
 
-        public void AddPerson(string firstname, string nickname, string lastname)
+        public void AddPerson(string firstname, string? nickname, string lastname)
         {
-            Console.WriteLine($"Adding a person with {nickname.Length} characters in their nickname!");
+            if (nickname != null)
+                Console.WriteLine($"Adding a person with {nickname.Length} characters in their nickname!");
 
-            people?.Add(new Person(Environment.TickCount, firstname, nickname, lastname));
+            if (people == null)
+                people = new List<Person>();
+
+            people.Add(new Person(Environment.TickCount, firstname, nickname, lastname));
         }
     }
 

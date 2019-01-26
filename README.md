@@ -11,6 +11,7 @@ There are many features planned for C# 8.0, all of which are listed in this [Git
 
  - [Building C# 8.0](https://blogs.msdn.microsoft.com/dotnet/2018/11/12/building-c-8-0)
  - [Take C# 8.0 for a spin](https://blogs.msdn.microsoft.com/dotnet/2018/12/05/take-c-8-0-for-a-spin)
+ - [Do more with patterns in C# 8.0](https://blogs.msdn.microsoft.com/dotnet/2019/01/24/do-more-with-patterns-in-c-8-0)
 
 But, Here are some of the most notable ones:
 
