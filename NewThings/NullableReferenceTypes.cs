@@ -6,7 +6,7 @@ using System.Linq;
 #nullable enable
 
 // or the whole solution
-// <NullableReferenceTypes>true</NullableReferenceTypes>
+// <NullableContextOptions>enable</NullableContextOptions>
 
 namespace NewThings
 {
